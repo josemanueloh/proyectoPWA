@@ -1,0 +1,20 @@
+{
+  "name": "proyectopwa",
+  "version": "1.0.0",
+  "description": "Es una aplicacion progresiva",
+  "main": "index.js",
+  "scripts": {
+  "start": "http-server -c-l ."
+  },
+  "keywords": [
+    "pwa",
+    "proyecto",
+    "uttc",
+    "ingenieria"
+  ],
+  "author": "treysitrysi@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
