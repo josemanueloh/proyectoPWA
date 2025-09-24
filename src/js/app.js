@@ -15,7 +15,7 @@ window.addEventListener('load', async () => {
     addPost.addEventListener('click', ClosePostModal);
 
     if ('serviceWorker' in navigator) {
-       const response = await navigator.serviceWorker.register('./sw.js');
+       const response = await navigator.serviceWorker.register('sw.js');
         if (response) {
             console.log("Servicio worker registro");
         }
