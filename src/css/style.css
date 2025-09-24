@@ -1,14 +1,14 @@
 :root {
-  --primary: #ff9800;
-  --dark-primary: #c66900;
-  --light-primary: #ffc947;
+  --primary: rgb(252, 75, 8);
+  --dark-primary: rgb(222, 63, 5);;
+  --light-primary: rgb(255, 140, 46);
 
-  --secondary: #3f962c;
-  --dark-secondary: #134b07;
-  --light-secondary: #74df5c;
+  --secondary: rgb(117, 229, 5);
+  --dark-secondary: rgb(23, 152, 21);
+  --light-secondary: rgb(128, 255, 0);
   
   --gray: #757575;
-  --error: #ca3a41;
+  --error: #ff000d;
   --success: #00600f;
   --white: #FFF;
   --black: #000;
@@ -50,7 +50,7 @@
 
 .svg--container div {
   height: 210px;
-  background: var(--dark-primary) url('../images/computer.jpg');
+  background: var(--dark-primary) url('../images/computer.jpeg');
   background-position: bottom;
   background-size: cover;
   object-fit: cover;
@@ -130,22 +130,19 @@
 }
 
 .app--install div:last-child {
-  border:1px solid rgba(255, 201, 71, .5);
+  border:1px solid rgba(255, 187, 27, 0.797);
   border-radius: 4px;
-  padding: 5px 8px;
+  padding: 5px 8px;
 }
-
 .notifications--install{
   background: var(--secondary);
   color: var(--white) !important;
   display: flex;
   flex-direction: row;
 }
-
 .notifications--install:hover{
-    background: var(--dark-secondary) !important;
+  background: var(--dark-secondary)!important;
 }
-
 .notifications--install div:first-child {
   text-align: left;
   font-size: 12px;
@@ -153,7 +150,7 @@
 }
 
 .notifications--install div:last-child {
-  border:1px solid rgba(148, 243, 157, 0.5);
+  border:1px solid rgba(7, 255, 32, 0.5);
   border-radius: 4px;
-  padding: 5px 8px;
+  padding: 5px 8px;
 }

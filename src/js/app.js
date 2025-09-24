@@ -23,7 +23,22 @@ window.addEventListener('load', async () => {
 
 
 });
+let deferredInstallPrompt = null;
 
+window.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  document.getElementById('btn-install-app').addEventListener('click', () => {
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('El usuario aceptó la instalación de la aplicación');
+      } else {
+        console.log('El usuario rechazó la instalación de la aplicación');
+      }
+    });
+  });
+});
 const ShowPostModal = () => {
     main.style.display = 'none';
     modalPost.style.display = 'block';
